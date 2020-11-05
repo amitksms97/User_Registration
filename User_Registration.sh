@@ -18,3 +18,12 @@ else
     echo "Email address $email is invalid."
 fi
 
+read -p "Enter a phone number: " phoneNumber
+phone="^[0-9]{10}$"
+if [[ $phoneNumber =~ $phone ]]
+then
+	echo "Valid Phone Number"
+else
+	echo "Invalid Phone Number"
+fi
+echo $phoneNumber
