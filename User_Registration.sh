@@ -1,9 +1,9 @@
 #!/bin/bash
 echo "Welcome to User Registration System"
 
-echo "enter the name:"
-read name
-if [[ "$name" =~ ^[A-Z][a-z]$ ]]
+read -p "enter the name:" name
+
+if [[ "$name" =~ ^[A-Z][a-zA-Z]* ]]
 then
     echo "valid name"
 else
